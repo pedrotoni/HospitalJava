@@ -1,11 +1,11 @@
 import java.util.ArrayList;
 
-public class ClinicoGeral extends Medico {
-
-    public ClinicoGeral
+public final class NeuroCirurgiao extends Cirurgiao{
+    public NeuroCirurgiao
             (String nome, Integer idade, Double salario, Integer anosDeEmpresa, String crm, Paciente paciente) {
-        super(nome, idade, salario, anosDeEmpresa, crm, paciente);
+        super(nome,idade,salario,anosDeEmpresa,crm,paciente);
     }
+
     @Override
     public void realizarDiagnostico(ArrayList<String> sintomas) {
         if (sintomas.size() <= 2) {
@@ -16,4 +16,12 @@ public class ClinicoGeral extends Medico {
             System.out.println(this.getNomePaciente()+", seu caso é grave e precisaremos operar o quanto antes.\n");
         }
     }
+
+    public void realizarCirurgia(Cirurgia cirurgia) {
+        System.out.println("-----Dados da Neurocirurgia-----\n" +
+                "Data: "+cirurgia.getDataDaCirurgia()+
+                "\nPaciente: "+cirurgia.getNomePaciente()+
+                "\nNeurocirurgião: "+cirurgia.getNomeNeuroCirurgiao());
+        System.out.println("Dr(a). "+cirurgia.getNomeNeuroCirurgiao()+" realizou a cirurgia com sucesso.");
+    };
 }

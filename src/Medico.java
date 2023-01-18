@@ -19,7 +19,10 @@ public abstract class Medico extends Funcionario {
         this.crm = crm;
     }
 
-    public String realizarDiagnostico(ArrayList<String> sintomas) {
-        return "realizando diagnóstico...";
-    };
+    public abstract void realizarDiagnostico(ArrayList<String> sintomas);
+
+    public String getNomePaciente() {
+        return paciente.getNome();
+    }
+
 }
