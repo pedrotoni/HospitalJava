@@ -33,4 +33,8 @@ public class Paciente extends Pessoa {
         }
         System.out.println(this.getNome() +" apresenta um total de "+contagemSintomas+" sintomas.\n");
     }
+
+    public String getNomePaciente() {
+        return this.getNome();
+    }
 }

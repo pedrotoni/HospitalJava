@@ -22,6 +22,6 @@ public final class NeuroCirurgiao extends Cirurgiao{
                 "Data: "+cirurgia.getDataDaCirurgia()+
                 "\nPaciente: "+cirurgia.getNomePaciente()+
                 "\nNeurocirurgião: "+cirurgia.getNomeNeuroCirurgiao());
-        System.out.println("Dr(a). "+cirurgia.getNomeNeuroCirurgiao()+" realizou a cirurgia com sucesso.");
+        System.out.println(cirurgia.getNomeNeuroCirurgiao()+" realizou a cirurgia com sucesso.\n");
     };
 }
