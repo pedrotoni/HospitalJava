@@ -10,6 +10,6 @@ public class Sala {
 
     public void reservarSala(Integer dia, Integer mes, Integer ano) {
         System.out.println(medico.getNome()+
-                " reservou a sala "+this.numeroSala+" para a data "+dia+"/"+mes+"/"+ano+".");
+                " reservou a sala "+this.numeroSala+" para a data "+dia+"/"+mes+"/"+ano+".\n");
     }
 }

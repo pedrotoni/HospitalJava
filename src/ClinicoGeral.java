@@ -8,12 +8,13 @@ public class ClinicoGeral extends Medico {
     }
     @Override
     public void realizarDiagnostico(ArrayList<String> sintomas) {
-        if (sintomas.size() <= 2) {
+        if (sintomas.size() <= 4) {
             System.out.println(this.getNomePaciente()+", toma um dipirona que você vai ficar bem.\n");
-        } else if (sintomas.size() >= 3 && sintomas.size() <= 5) {
+        } else if (sintomas.size() >= 5 && sintomas.size() <= 7) {
             System.out.println(this.getNomePaciente()+", você será internado(a) temporariamente para observação.\n");
         } else {
             System.out.println(this.getNomePaciente()+", seu caso é grave e precisaremos operar o quanto antes.\n");
         }
     }
+
 }

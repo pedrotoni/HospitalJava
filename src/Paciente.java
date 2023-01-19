@@ -37,4 +37,21 @@ public class Paciente extends Pessoa {
     public String getNomePaciente() {
         return this.getNome();
     }
+    @Override
+    public boolean equals(Object objeto) {
+        if (this == objeto) {
+            return true;
+        }
+        if (objeto == null) {
+            return false;
+        }
+        if (objeto instanceof ClinicoGeral) {
+            Paciente teste = (Paciente) objeto;
+            if (teste.senhaDeAtendimento == this.senhaDeAtendimento
+                    && teste.sintomas == this.sintomas) {
+                return true;
+            }
+        }
+        return false;
+    }
 }
